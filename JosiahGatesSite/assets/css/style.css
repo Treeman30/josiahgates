@@ -1,3 +1,160 @@
-.ping Blog {
-	color: blue;
+body {
+	margin: 0;
+	background-color: #FFF;
+	font-family: 'Oxygen', sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #40403E;
 }
+
+a {
+	text-decoration: none;
+	color: #31312F;
+}
+
+a:hover {
+	color: #D8924E;
+}
+
+.container {
+	max-width: 1000px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.clearfix {
+  overflow: auto;
+}
+
+.container-about {
+	margin: 200px auto;
+}
+
+.container-about-h1 {
+	border-bottom: 2px dotted #D8924E;
+	padding-bottom: 15px;
+}
+
+.hero {
+	overflow: hidden;
+  background-image: url(../images/header3.0.jpg) ;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+
+.hero-hd {
+	color: #FFF;
+	display: inline-block;
+  margin: 200px auto;
+  padding: 15px;
+  font-size: 32px;
+  line-height: 1.2;
+  border-right: 2px solid white;
+  border-left: 2px solid white;
+}
+
+.hero-hd-3 {
+	color: #FFF;
+  /*margin-bottom: 200px;*/
+}
+
+.meetUp {
+	overflow: hidden;
+  background-image: url(../images/meet.jpg) ;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+
+.meet-hd {
+	color: #FFF;
+	display: inline-block;
+  margin: 200px 0 auto;
+  padding: 15px;
+  font-size: 32px;
+  line-height: 1.2;
+  border-right: 2px solid white;
+  border-left: 2px solid white;
+}
+
+.meet-hd-3 {
+	color: #FFF;
+  margin-bottom: 200px;
+}
+
+#letsMeet {
+	color: #FFF;
+}
+
+#letsMeet:hover {
+	color: #31312F;
+}
+
+/* Header Navigation */
+
+.mainNav > * {
+	display: inline-block;
+  margin: 0 15px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #40403E;
+  border-bottom: none;
+}
+
+.logo {
+  display: block;
+  margin: 30px auto;
+  width: 250px;
+  height: auto;
+}
+
+#nameLogo:hover {
+	color: #31312F;
+}
+
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+@media screen and (min-width: 600px) {
+	.mainNav {
+		float: right;
+  	padding: 35px 0 0;
+  	text-align: right;
+	}
+
+	.logo {
+  float: left;
+  margin: 30px 0;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
