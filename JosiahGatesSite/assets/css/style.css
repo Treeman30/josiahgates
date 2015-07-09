@@ -9,6 +9,8 @@ body {
 
 a {
 	text-decoration: none;
+	text-transform: uppercase;
+	border-bottom: 2px solid;
 	color: #31312F;
 }
 
@@ -37,7 +39,7 @@ a:hover {
 
 .hero {
 	overflow: hidden;
-  background-image: url(../images/header3.0.jpg) ;
+  background-image: url(../img/header3.0.jpg) ;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -47,22 +49,25 @@ a:hover {
 .hero-hd {
 	color: #FFF;
 	display: inline-block;
-  margin: 200px auto;
+  margin: 200px 0 auto;
   padding: 15px;
-  font-size: 32px;
+  font-size: 50px;
   line-height: 1.2;
   border-right: 2px solid white;
   border-left: 2px solid white;
+  /*font-family: 'Shadows Into Light', cursive;*/
 }
 
 .hero-hd-3 {
 	color: #FFF;
-  /*margin-bottom: 200px;*/
+  margin-bottom: 200px;
+  font-size: 50px;
+  /*font-family: 'Shadows Into Light', cursive;*/
 }
 
 .meetUp {
 	overflow: hidden;
-  background-image: url(../images/meet.jpg) ;
+  background-image: url(../img/meet.jpg) ;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -87,10 +92,12 @@ a:hover {
 
 #letsMeet {
 	color: #FFF;
+
 }
 
 #letsMeet:hover {
 	color: #31312F;
+	border-bottom: none;
 }
 
 /* Header Navigation */
@@ -126,6 +133,80 @@ a:hover {
   width: 1px;
 }
 
+/* Projects */
+
+.content {
+    padding: 90px 0;
+}
+
+.content-hd {
+    margin: 0;
+    padding: 0 0 15px;
+    line-height: 1.2;
+    border-bottom: 2px solid #D8924E;
+}
+
+.portfolio {
+    overflow: hidden;
+    padding-top: 30px;
+    margin-left: -5%;
+    text-align: center;
+}
+
+.portfolio-block {
+    float: none;
+    margin: 0 0 60px 5%;
+    width: 100%;
+}
+
+.portfolio-block-img {
+    width: 100%;
+    height: auto;
+}
+
+.portfolio-block-hd {
+    font-size: 1em;
+    text-align: left !important;
+    padding: 0;
+    margin: 0;
+}
+
+.portfolio-block-category {
+    font-size: .75em;
+    text-align: left !important;
+    padding-bottom: 15px;
+    margin: 0;
+}
+
+/* Buttons */
+
+.btn {
+    display: block;
+    width: auto;
+    margin: 30px 0 0;
+    padding: 15px 30px;
+    text-align: center;
+    border: 0;
+    color: white;
+    background: #D8924E;
+    border-radius: 6px;
+
+    transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+}
+
+.btn:hover {
+    color: white;
+    opacity: 0.7;
+}
+
+.btn:active,
+.btn:focus {
+    outline: 0;
+    opacity: 1;
+}
+
 @media screen and (min-width: 600px) {
 	.mainNav {
 		float: right;
@@ -137,10 +218,31 @@ a:hover {
   float: left;
   margin: 30px 0;
 	}
+
+	.portfolio-block {
+  float: left;
+  width: 45%;
+	}
+
+	.btn {
+  display: inline-block;
+	}
 }
 
+@media screen and (max-width: 600px) {
 
+	.header {
+		text-align: center;
+	}
 
+	.mainNav {
+		padding-bottom: 10px;
+	}
+
+	#mainNavSoShow.hidden {
+		display: hidden;
+	}
+}
 
 
 
