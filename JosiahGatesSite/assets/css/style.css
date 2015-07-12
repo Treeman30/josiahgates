@@ -28,13 +28,21 @@ a:hover {
   overflow: auto;
 }
 
-.container-about {
+.container-tall {
 	margin: 200px auto;
+}
+
+.container-tall-contact {
+  margin: 200px 0 auto;
 }
 
 .container-about-h1 {
 	border-bottom: 2px dotted #D8924E;
 	padding-bottom: 15px;
+}
+
+.container-half {
+  max-width: 50%;
 }
 
 .hero {
@@ -63,6 +71,17 @@ a:hover {
   margin-bottom: 200px;
   font-size: 50px;
   /*font-family: 'Shadows Into Light', cursive;*/
+}
+
+.hero-hd-contact {
+  color: #FFF;
+  display: inline-block;
+  margin: 200px auto;
+  padding: 15px;
+  font-size: 50px;
+  line-height: 1.2;
+  border-right: 2px solid white;
+  border-left: 2px solid white;
 }
 
 .meetUp {
@@ -178,6 +197,34 @@ a:hover {
     margin: 0;
 }
 
+/* Form */
+
+.form-group {
+    overflow: hidden;
+}
+
+.form-control {
+    display: block;
+    width: 88%;
+    margin: 30px 0 0;
+    padding: 15px 9% 15px 3%;
+    background: #f0f0f0;
+    border: 0;
+    border-radius: 6px;
+    font-family: 'Oxygen', sans-serif;
+    font-weight: 400;
+
+    transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+}
+
+.form-control:focus {
+    outline: 0;
+    color: white;
+    background: #3ABD9D;
+}
+
 /* Buttons */
 
 .btn {
@@ -207,45 +254,6 @@ a:hover {
     opacity: 1;
 }
 
-@media screen and (min-width: 600px) {
-	.mainNav {
-		float: right;
-  	padding: 35px 0 0;
-  	text-align: right;
-	}
-
-	.logo {
-  float: left;
-  margin: 30px 0;
-	}
-
-	.portfolio-block {
-  float: left;
-  width: 45%;
-	}
-
-	.btn {
-  display: inline-block;
-	}
-}
-
-@media screen and (max-width: 600px) {
-
-	.header {
-		text-align: center;
-	}
-
-	.mainNav {
-		padding-bottom: 10px;
-	}
-
-	#mainNavSoShow.hidden {
-		display: hidden;
-	}
-}
-
-
-
 /* Font Awesome */
 
 .fa-lg {
@@ -260,6 +268,43 @@ a:hover {
   font-size: inherit;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
+}
+
+@media screen and (min-width: 600px) {
+  .mainNav {
+    float: right;
+    padding: 35px 0 0;
+    text-align: right;
+  }
+
+  .logo {
+  float: left;
+  margin: 30px 0;
+  }
+
+  .portfolio-block {
+  float: left;
+  width: 45%;
+  }
+
+  .btn {
+  display: inline-block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+
+  .header {
+    text-align: center;
+  }
+
+  .mainNav {
+    padding-bottom: 10px;
+  }
+
+  #mainNavSoShow.hidden {
+    display: hidden;
+  }
 }
 
 .desktopOnly { display: none; }
