@@ -41,10 +41,6 @@ a:hover {
 	padding-bottom: 15px;
 }
 
-.container-half {
-  max-width: 50%;
-}
-
 .hero {
 	overflow: hidden;
   background-image: url(../img/header3.0.jpg) ;
@@ -109,9 +105,9 @@ a:hover {
   margin-bottom: 200px;
 }
 
-#letsMeet {
+.letsMeet {
 	color: #FFF;
-
+  border-bottom: none;
 }
 
 #letsMeet:hover {
@@ -152,6 +148,38 @@ a:hover {
   width: 1px;
 }
 
+/* Contact Page */
+
+.container-half {
+  padding-top: 30px;
+  margin-left: -5%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.container-half-content {
+  float: none;
+  margin: 0 0 60px 5%;
+  width: 100%;
+}
+
+.icon-block {
+  padding-top: 109px;
+}
+
+#block-icon {
+  padding-top: 26px;
+}
+
+#startConvo {
+  text-align: center;
+}
+
+#icon {
+  border-bottom: none;
+  margin-right: 70px;
+}
+
 /* Projects */
 
 .content {
@@ -166,7 +194,6 @@ a:hover {
 }
 
 .portfolio {
-    overflow: hidden;
     padding-top: 30px;
     margin-left: -5%;
     text-align: center;
@@ -256,7 +283,7 @@ a:hover {
 
 /* Font Awesome */
 
-.fa-lg {
+/*.fa-lg {
   font-size: 1.33333333em;
   line-height: .75em;
   vertical-align: -15%;
@@ -268,7 +295,7 @@ a:hover {
   font-size: inherit;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
-}
+}*/
 
 @media screen and (min-width: 600px) {
   .mainNav {
@@ -285,6 +312,11 @@ a:hover {
   .portfolio-block {
   float: left;
   width: 45%;
+  }
+
+.container-half-content {
+    float: left;
+    width: 45%;
   }
 
   .btn {
