@@ -148,6 +148,11 @@ a:hover {
   width: 1px;
 }
 
+#footer {
+  border-top: 1px solid #31312F;
+}
+
+
 /* Contact Page */
 
 .container-half {
@@ -190,7 +195,7 @@ a:hover {
     margin: 0;
     padding: 0 0 15px;
     line-height: 1.2;
-    border-bottom: 2px solid #D8924E;
+    border-bottom: 2px dotted #D8924E;
 }
 
 .portfolio {
@@ -249,7 +254,7 @@ a:hover {
 .form-control:focus {
     outline: 0;
     color: white;
-    background: #3ABD9D;
+    background: #D8924E;
 }
 
 /* Buttons */
@@ -297,33 +302,27 @@ a:hover {
   -webkit-font-smoothing: antialiased;
 }*/
 
-@media screen and (min-width: 600px) {
-  .mainNav {
-    float: right;
-    padding: 35px 0 0;
-    text-align: right;
+@media screen and (max-width: 775px) {
+
+  .container-half-content {
+    float: none;
   }
 
-  .logo {
-  float: left;
-  margin: 30px 0;
+  .icon-block {
+    padding-top: 0px;
   }
 
-  .portfolio-block {
-  float: left;
-  width: 45%;
-  }
-
-.container-half-content {
-    float: left;
-    width: 45%;
-  }
-
-  .btn {
-  display: inline-block;
+  #block-icon {
+    padding-bottom: 60px;
   }
 }
 
+@media screen and (min-width: 775px) {
+  .container-half-content {
+    float: left;
+    width: 45%;
+  }
+}
 @media screen and (max-width: 600px) {
 
   .header {
@@ -342,41 +341,66 @@ a:hover {
 .desktopOnly { display: none; }
 
 @media screen and (min-width: 600px) {
-    .desktopOnly {
-        display: inline-block;
-    }
+  .desktopOnly {
+    display: inline-block;
+  }
 
-    .logo {
-        float: left;
-        margin: 30px 0;
-    }
+  .logo {
+    float: left;
+    margin: 30px 0;
+  }
 
-    .mainNav {
-        float: right;
-        padding: 35px 0 0;
-        text-align: right;
-    }
+  .mainNav {
+    float: right;
+    padding: 35px 0 0;
+    text-align: right;
+  }
 
-    .mainNav > * {
-        margin: 0 0 0 30px;
-    }
+  .mainNav > * {
+    margin: 0 0 0 30px;
+  }
 
-    .mainNav > *:last-child {
-        margin-left: 5px;
-    }
+  .mainNav > *:last-child {
+    margin-left: 5px;
+  }
 
-    .btn {
-        display: inline-block;
-    }
+  .btn {
+    display: inline-block;
+  }
 
-    .btn_right {
-        float: right;
-    }
+  .btn_right {
+    float: right;
+  }
 
-    .portfolio-block {
-        float: left;
-        width: 45%;
-    }
+  .portfolio-block {
+    float: left;
+    width: 45%;
+  }
+
+  .mainNav {
+    float: right;
+    padding: 35px 0 0;
+    text-align: right;
+  }
+
+  .logo {
+    float: left;
+    margin: 30px 0;
+  }
+
+  .portfolio-block {
+    float: left;
+    width: 45%;
+  }
+
+  /*.container-half-content {
+    float: left;
+    width: 45%;
+  }*/
+
+  .btn {
+    display: inline-block;
+  }
 }
 
 
