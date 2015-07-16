@@ -148,10 +148,28 @@ a:hover {
   width: 1px;
 }
 
+/* footer */
+
 #footer {
   border-top: 1px solid #31312F;
 }
 
+.footer {
+  display: inline-block;
+  margin: 0 15px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #40403E;
+  border-bottom: none;
+}
+
+.footerNav {
+  align: center;
+}
+
+.footerNav > a {
+  border-bottom: none;
+}
 
 /* Contact Page */
 
